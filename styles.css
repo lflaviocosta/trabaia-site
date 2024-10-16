@@ -1,0 +1,80 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importação da fonte (se necessário) */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #1A1A1A; /* Cor dark */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.logo {
+    margin-top: 20px;
+    width: 150px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content h1 {
+    color: #012E40; /* Cor primary */
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.google-play-button {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.legal-links {
+    background-color: #012E40; /* Cor primary */
+    width: 100%;
+    padding: 10px 0;
+}
+
+.legal-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.legal-links a:hover {
+    text-decoration: underline;
+}

@@ -3,54 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabaia - Documentos Legais</title>
+    <title>Trabaia - Conectando Profissionais e Clientes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            padding: 20px;
             color: #333;
         }
         .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        header, footer {
             text-align: center;
+            margin-bottom: 20px;
         }
         h1 {
-            margin-bottom: 20px;
             color: #444;
         }
+        p {
+            line-height: 1.6;
+        }
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: disc;
+            margin-left: 20px;
         }
-        li {
-            margin: 10px 0;
+        nav {
+            text-align: center;
+            margin-top: 30px;
         }
-        a {
+        nav a {
             text-decoration: none;
             color: #007BFF;
+            margin: 0 10px;
             font-weight: bold;
         }
-        a:hover {
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Documentos Legais</h1>
+        <header>
+            <h1>Bem-vindo ao Trabaia!</h1>
+        </header>
+
+        <p>O <strong>Trabaia</strong> é uma plataforma inovadora que conecta profissionais autônomos a clientes em busca de serviços de qualidade. Nosso objetivo é facilitar a contratação de serviços, oferecendo uma interface amigável e segura para ambas as partes.</p>
+
+        <p>Com o Trabaia, você pode:</p>
         <ul>
-            <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
-            <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+            <li>Encontrar profissionais qualificados em diversas áreas.</li>
+            <li>Avaliar e comentar sobre os serviços prestados.</li>
+            <li>Gerenciar suas solicitações e contratos em um só lugar.</li>
         </ul>
+
+        <nav>
+            <a href="politica-de-privacidade.html">Política de Privacidade</a>
+            |
+            <a href="termos-de-uso.html">Termos de Uso</a>
+        </nav>
+
+        <div class="contact-info">
+            <p>Entre em contato conosco:</p>
+            <p>Email: <a href="mailto:contato@trabaia.com">contato@trabaia.com</a></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Trabaia. Todos os direitos reservados.</p>
+        </footer>
     </div>
 </body>
 </html>

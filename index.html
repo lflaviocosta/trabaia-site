@@ -2,89 +2,38 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabaia - Conectando Profissionais e Clientes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-        header, footer {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #444;
-        }
-        p {
-            line-height: 1.6;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        nav {
-            text-align: center;
-            margin-top: 30px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #007BFF;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .contact-info a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte personalizada (opcional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <!-- Logo -->
+        <img src="logo.png" alt="Logo Trabaia" class="logo">
+
+        <!-- Conteúdo Principal -->
+        <div class="content">
             <h1>Bem-vindo ao Trabaia!</h1>
-        </header>
+            <p>Conectando profissionais autônomos a clientes em busca de serviços de qualidade.</p>
 
-        <p>O <strong>Trabaia</strong> é uma plataforma inovadora que conecta profissionais autônomos a clientes em busca de serviços de qualidade. Nosso objetivo é facilitar a contratação de serviços, oferecendo uma interface amigável e segura para ambas as partes.</p>
+            <!-- Imagem relacionada a trabalho -->
+            <img src="imagem-trabalho.jpg" alt="Profissionais trabalhando" class="main-image">
 
-        <p>Com o Trabaia, você pode:</p>
-        <ul>
-            <li>Encontrar profissionais qualificados em diversas áreas.</li>
-            <li>Avaliar e comentar sobre os serviços prestados.</li>
-            <li>Gerenciar suas solicitações e contratos em um só lugar.</li>
-        </ul>
+            <!-- Botão do Google Play Store -->
+            <a href="https://play.google.com/store/apps/details?id=com.trabaia.firebase" target="_blank">
+                <img src="google-play-badge.png" alt="Disponível no Google Play" class="google-play-button">
+            </a>
+        </div>
 
-        <nav>
+        <!-- Links para documentos legais -->
+        <div class="legal-links">
             <a href="politica-de-privacidade.html">Política de Privacidade</a>
             |
             <a href="termos-de-uso.html">Termos de Uso</a>
-        </nav>
-
-        <div class="contact-info">
-            <p>Entre em contato conosco:</p>
-            <p>Email: <a href="mailto:contato@trabaia.com">contato@trabaia.com</a></p>
         </div>
-
-        <footer>
-            <p>&copy; 2023 Trabaia. Todos os direitos reservados.</p>
-        </footer>
     </div>
 </body>
 </html>

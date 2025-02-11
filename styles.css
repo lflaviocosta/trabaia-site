@@ -39,32 +39,27 @@ body, html {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
-/* Container dos botões */
+/* Botões - Lado a lado e mesmo tamanho */
 .download-buttons {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 30px; /* Espaçamento entre os botões */
-    margin: 20px 0; /* Espaçamento externo (opcional) */
-    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas pequenas */
-}
-
-/* Estilo unificado para os botões */
-.google-play-container,
-.app-store-container {
-    margin: 0; /* Remove margens anteriores */
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os botões */
+    margin: 30px 0;
+    flex-wrap: wrap;
 }
 
 .store-button {
-    width: 200px; /* Tamanho igual para ambos */
+    display: inline-block;
+    width: 180px; /* Tamanho igual para ambos */
     height: auto;
-    transition: transform 0.2s; /* Efeito de hover suave */
+    transition: transform 0.2s;
 }
 
-/* Efeito ao passar o mouse (opcional) */
-.store-button:hover {
-    transform: scale(1.05);
+.store-button img {
+    width: 100%; /* Garante que a imagem preencha o container */
+    height: auto;
 }
+
 .legal-links {
     background-color: #012E40; /* Cor primary */
     width: 100%;

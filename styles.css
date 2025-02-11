@@ -68,6 +68,7 @@ body, html {
     margin-top: auto; /* Empurra o rodapé para baixo */
     text-align: center;
     bottom: 0;
+    position: fixed;
 }
 
 .legal-links a {

@@ -44,10 +44,10 @@ body, html {
 }
 /* Botões - Lado a lado e mesmo tamanho */
 .download-buttons {
-    flex-direction: column; /* Empilha verticalmente */
+    flex-direction: row; /* Empilha verticalmente */
     gap: 15px;
     width: 100%;
-    max-width: 300px; /* Limita largura máxima */
+    max-width: 100px; /* Limita largura máxima */
     margin: 20px 0;
 }
 .store-button {

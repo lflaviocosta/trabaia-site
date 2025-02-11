@@ -60,17 +60,26 @@ body, html {
     height: auto;
 }
 
+/* Rodapé fixo na base */
 .legal-links {
-    background-color: #012E40; /* Cor primary */
+    background-color: #012E40;
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0;
+    margin-top: auto; /* Empurra o rodapé para baixo */
+    text-align: center;
+    position: sticky;
+    bottom: 0;
 }
 
 .legal-links a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+    margin: 0 15px;
+}
+
+.legal-links span {
+    color: #ffffff;
+    user-select: none;
 }
 
 .legal-links a:hover {

@@ -52,6 +52,17 @@ body, html {
     height: auto;
 }
 
+/* Estilo para o botão da App Store */
+.app-store-container {
+    margin: 20px auto; /* Espaçamento igual ao do Google Play */
+    text-align: center;
+}
+
+.app-store-button {
+    width: 200px; /* Ajuste conforme o tamanho do seu ícone */
+    height: auto;
+}
+
 .legal-links {
     background-color: #012E40; /* Cor primary */
     width: 100%;

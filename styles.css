@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
 }
 
 body, html {
@@ -28,6 +29,8 @@ body, html {
 
 .content {
     margin-top: 20px;
+    flex: 1; 
+
 }
 
 .content h1 {
@@ -68,7 +71,6 @@ body, html {
     margin-top: auto; /* Empurra o rodapé para baixo */
     text-align: center;
     bottom: 0;
-    position: fixed;
 }
 
 .legal-links a {

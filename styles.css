@@ -39,30 +39,32 @@ body, html {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
-
-.google-play-container {
-    flex: 1;
+/* Container dos botões */
+.download-buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 30px; /* Espaçamento entre os botões */
+    margin: 20px 0; /* Espaçamento externo (opcional) */
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas pequenas */
 }
 
-.google-play-button {
-    width: 200px;
-    height: auto;
-}
-
-/* Estilo para o botão da App Store */
+/* Estilo unificado para os botões */
+.google-play-container,
 .app-store-container {
-    margin: 20px auto; /* Espaçamento igual ao do Google Play */
-    text-align: center;
+    margin: 0; /* Remove margens anteriores */
 }
 
-.app-store-button {
-    width: 200px; /* Ajuste conforme o tamanho do seu ícone */
+.store-button {
+    width: 200px; /* Tamanho igual para ambos */
     height: auto;
+    transition: transform 0.2s; /* Efeito de hover suave */
 }
 
+/* Efeito ao passar o mouse (opcional) */
+.store-button:hover {
+    transform: scale(1.05);
+}
 .legal-links {
     background-color: #012E40; /* Cor primary */
     width: 100%;

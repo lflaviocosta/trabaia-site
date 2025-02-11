@@ -3,28 +3,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%;
 }
 
 body, html {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #1A1A1A; /* Cor dark */
 }
 
 .container {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    text-align: center;
+    padding: 20px;
     background-color: #ffffff;
 }
 
 .logo {
-    margin-top: 20px;
-    width: 150px;
+    width: 100%;
+    max-width: 150px; /* Não ultrapassa 150px mesmo em telas grandes */
+    margin-top: 10px;
 }
 
 .content {
@@ -35,28 +36,23 @@ body, html {
 }
 
 .content h1 {
-    color: #012E40; /* Cor primary */
-    margin-bottom: 10px;
+    font-size: 1.5em; /* Reduz tamanho em mobile */
 }
 
 .content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-size: 1em; /* Texto menor em mobile */
 }
 /* Botões - Lado a lado e mesmo tamanho */
 .download-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espaçamento entre os botões */
-    margin: 30px 0;
-    flex-wrap: wrap;
+    flex-direction: column; /* Empilha verticalmente */
+    gap: 15px;
+    width: 100%;
+    max-width: 300px; /* Limita largura máxima */
+    margin: 20px 0;
 }
-
 .store-button {
-    display: inline-block;
-    width: 180px; /* Tamanho igual para ambos */
-    height: auto;
-    transition: transform 0.2s;
+    width: 100%; /* Ocupa toda a largura do container */
+    max-width: 200px; /* Não cresce além disso */
 }
 
 .store-button img {
@@ -69,11 +65,9 @@ body, html {
     background-color: #012E40;
     width: 100%;
     padding: 15px 0;
-    margin-top: auto; /* Empurra o rodapé para baixo */
     text-align: center;
-    bottom: 0;
+    margin-top: auto; /* Garante que fique no final */
 }
-
 .legal-links a {
     color: #ffffff;
     text-decoration: none;
@@ -87,4 +81,27 @@ body, html {
 
 .legal-links a:hover {
     text-decoration: underline;
+}
+/* Para telas maiores que 768px (tablets/desktop) */
+@media (min-width: 768px) {
+    .logo {
+        margin-top: 30px;
+    }
+
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .content p {
+        font-size: 1.2em;
+    }
+
+    .download-buttons {
+        flex-direction: row; /* Botões lado a lado */
+        max-width: none;
+    }
+
+    .store-button {
+        max-width: 180px;
+    }
 }

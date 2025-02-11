@@ -65,9 +65,8 @@ body, html {
     background-color: #012E40;
     width: 100%;
     padding: 15px 0;
-    margin-bottom: auto; /* Empurra o rodapé para baixo */
+    margin-top: auto; /* Empurra o rodapé para baixo */
     text-align: center;
-    position: sticky;
     bottom: 0;
 }
 

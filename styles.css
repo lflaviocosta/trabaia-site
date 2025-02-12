@@ -48,7 +48,7 @@ body, html {
     flex-direction: column; /* Empilha verticalmente */
     gap: 15px;
     width: 100%;
-    max-width: 300px; /* Limita largura máxima */
+    max-width: 250px; /* Limita largura máxima */
     margin: 20px 0;
 }
 .store-button {

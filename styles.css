@@ -99,7 +99,7 @@ body, html {
 
     .download-buttons {
         flex-direction: row; /* Botões lado a lado */
-        max-width: none;
+        max-width: 300px;
     }
 
     .store-button {

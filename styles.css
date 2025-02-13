@@ -38,6 +38,7 @@ body, html {
 
 .content h1 {
     font-size: 1.5em; /* Reduz tamanho em mobile */
+    align-items: center;
 }
 
 .content p {
